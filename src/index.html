@@ -18,67 +18,82 @@
     * {
         font-family: 'Inter', sans-serif;
     }
+
+    .slick-dots li button:before {
+        color: #258AFF;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #258AFF;
+        opacity: 1;
+        /* content: "▂"; */
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex;
+    }
+
+    .slider2 .slick-slide {
+        /* width: 256px !important; */
+        margin: 0 10px;
+    }
 </style>
 
 <body class="bg-[#F1F8FF]">
-    <div class="">
-        <div class="flex justify-between items-center py-5 mx-auto max-w-[1440px]">
-            <div>
-                <svg width="75" height="26" viewBox="0 0 75 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M21.2751 0.346008V25.654H17.1035L4.90477 8.4154H4.68987V25.654H0V0.346008H4.19687L16.3829 17.597H16.6105V0.346008H21.2751Z"
-                        fill="url(#paint0_linear_377_2600)" />
-                    <path
-                        d="M48.5452 8.88498H43.8174C43.6826 8.12706 43.434 7.45564 43.0716 6.87072C42.7092 6.27757 42.2583 5.77503 41.719 5.36312C41.1796 4.9512 40.5644 4.64227 39.8734 4.43631C39.1908 4.22212 38.4534 4.11502 37.6612 4.11502C36.2538 4.11502 35.0065 4.46103 33.9194 5.15304C32.8323 5.83682 31.9811 6.84189 31.3659 8.16825C30.7507 9.48637 30.4431 11.097 30.4431 13C30.4431 14.936 30.7507 16.5672 31.3659 17.8935C31.9895 19.2117 32.8407 20.2085 33.9194 20.884C35.0065 21.5513 36.2496 21.885 37.6485 21.885C38.4239 21.885 39.1486 21.7861 39.8228 21.5884C40.5054 21.3824 41.1164 21.0817 41.6558 20.6863C42.2036 20.2909 42.6629 19.8048 43.0337 19.2281C43.4129 18.6515 43.6742 17.9924 43.8174 17.251L48.5452 17.2757C48.3682 18.4785 47.9848 19.6071 47.3949 20.6616C46.8134 21.7161 46.0507 22.647 45.1068 23.4544C44.1629 24.2535 43.0589 24.8796 41.7948 25.3327C40.5307 25.7776 39.1275 26 37.5853 26C35.3099 26 33.2789 25.4851 31.4923 24.4553C29.7057 23.4255 28.2983 21.9385 27.2701 19.9943C26.242 18.0501 25.7279 15.7186 25.7279 13C25.7279 10.2731 26.2462 7.9417 27.2828 6.0057C28.3194 4.06147 29.731 2.57446 31.5176 1.54468C33.3042 0.514892 35.3268 0 37.5853 0C39.0264 0 40.3664 0.197718 41.6052 0.593155C42.844 0.988594 43.948 1.56939 44.9172 2.33555C45.8863 3.09347 46.6827 4.0244 47.3064 5.12833C47.9384 6.22402 48.3514 7.47624 48.5452 8.88498Z"
-                        fill="url(#paint1_linear_377_2600)" />
-                    <path
-                        d="M75 8.88498H70.2722C70.1374 8.12706 69.8888 7.45564 69.5264 6.87072C69.164 6.27757 68.7131 5.77503 68.1738 5.36312C67.6344 4.9512 67.0192 4.64227 66.3282 4.43631C65.6455 4.22212 64.9081 4.11502 64.116 4.11502C62.7086 4.11502 61.4613 4.46103 60.3742 5.15304C59.287 5.83682 58.4359 6.84189 57.8207 8.16825C57.2055 9.48637 56.8979 11.097 56.8979 13C56.8979 14.936 57.2055 16.5672 57.8207 17.8935C58.4443 19.2117 59.2955 20.2085 60.3742 20.884C61.4613 21.5513 62.7044 21.885 64.1033 21.885C64.8786 21.885 65.6034 21.7861 66.2776 21.5884C66.9602 21.3824 67.5712 21.0817 68.1106 20.6863C68.6583 20.2909 69.1176 19.8048 69.4885 19.2281C69.8677 18.6515 70.1289 17.9924 70.2722 17.251L75 17.2757C74.823 18.4785 74.4396 19.6071 73.8496 20.6616C73.2682 21.7161 72.5055 22.647 71.5616 23.4544C70.6177 24.2535 69.5137 24.8796 68.2496 25.3327C66.9855 25.7776 65.5823 26 64.0401 26C61.7647 26 59.7337 25.4851 57.9471 24.4553C56.1605 23.4255 54.7531 21.9385 53.7249 19.9943C52.6968 18.0501 52.1827 15.7186 52.1827 13C52.1827 10.2731 52.701 7.9417 53.7376 6.0057C54.7741 4.06147 56.1857 2.57446 57.9724 1.54468C59.759 0.514892 61.7816 0 64.0401 0C65.4812 0 66.8212 0.197718 68.06 0.593155C69.2988 0.988594 70.4028 1.56939 71.372 2.33555C72.3411 3.09347 73.1375 4.0244 73.7612 5.12833C74.3932 6.22402 74.8062 7.47624 75 8.88498Z"
-                        fill="url(#paint2_linear_377_2600)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_377_2600" x1="0.188864" y1="13" x2="74.8301" y2="17.3225"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0.0016835" stop-color="#23245E" />
-                            <stop offset="0.3569" stop-color="#252A6B" />
-                            <stop offset="0.443" stop-color="#264482" />
-                            <stop offset="0.6254" stop-color="#2885BC" />
-                            <stop offset="0.7896" stop-color="#2AC5F4" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_377_2600" x1="0.188864" y1="13" x2="74.8301" y2="17.3225"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0.0016835" stop-color="#23245E" />
-                            <stop offset="0.3569" stop-color="#252A6B" />
-                            <stop offset="0.443" stop-color="#264482" />
-                            <stop offset="0.6254" stop-color="#2885BC" />
-                            <stop offset="0.7896" stop-color="#2AC5F4" />
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_377_2600" x1="0.188864" y1="13" x2="74.8301" y2="17.3225"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0.0016835" stop-color="#23245E" />
-                            <stop offset="0.3569" stop-color="#252A6B" />
-                            <stop offset="0.443" stop-color="#264482" />
-                            <stop offset="0.6254" stop-color="#2885BC" />
-                            <stop offset="0.7896" stop-color="#2AC5F4" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-            <div class="flex gap-10 justify-center items-center">
-                <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Trang chủ
-                </p>
-                <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Giới thiệu
-                </p>
-                <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Danh mục
-                </p>
-                <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Big Sale
-                </p>
-                <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Sản phẩm
-                    nổi bật</p>
-                <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">V-Store
-                </p>
-            </div>
+    <div class="flex justify-between items-center py-5 mx-auto max-w-[1440px]">
+        <div>
+            <svg width="75" height="26" viewBox="0 0 75 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.2751 0.346008V25.654H17.1035L4.90477 8.4154H4.68987V25.654H0V0.346008H4.19687L16.3829 17.597H16.6105V0.346008H21.2751Z"
+                    fill="url(#paint0_linear_377_2600)" />
+                <path
+                    d="M48.5452 8.88498H43.8174C43.6826 8.12706 43.434 7.45564 43.0716 6.87072C42.7092 6.27757 42.2583 5.77503 41.719 5.36312C41.1796 4.9512 40.5644 4.64227 39.8734 4.43631C39.1908 4.22212 38.4534 4.11502 37.6612 4.11502C36.2538 4.11502 35.0065 4.46103 33.9194 5.15304C32.8323 5.83682 31.9811 6.84189 31.3659 8.16825C30.7507 9.48637 30.4431 11.097 30.4431 13C30.4431 14.936 30.7507 16.5672 31.3659 17.8935C31.9895 19.2117 32.8407 20.2085 33.9194 20.884C35.0065 21.5513 36.2496 21.885 37.6485 21.885C38.4239 21.885 39.1486 21.7861 39.8228 21.5884C40.5054 21.3824 41.1164 21.0817 41.6558 20.6863C42.2036 20.2909 42.6629 19.8048 43.0337 19.2281C43.4129 18.6515 43.6742 17.9924 43.8174 17.251L48.5452 17.2757C48.3682 18.4785 47.9848 19.6071 47.3949 20.6616C46.8134 21.7161 46.0507 22.647 45.1068 23.4544C44.1629 24.2535 43.0589 24.8796 41.7948 25.3327C40.5307 25.7776 39.1275 26 37.5853 26C35.3099 26 33.2789 25.4851 31.4923 24.4553C29.7057 23.4255 28.2983 21.9385 27.2701 19.9943C26.242 18.0501 25.7279 15.7186 25.7279 13C25.7279 10.2731 26.2462 7.9417 27.2828 6.0057C28.3194 4.06147 29.731 2.57446 31.5176 1.54468C33.3042 0.514892 35.3268 0 37.5853 0C39.0264 0 40.3664 0.197718 41.6052 0.593155C42.844 0.988594 43.948 1.56939 44.9172 2.33555C45.8863 3.09347 46.6827 4.0244 47.3064 5.12833C47.9384 6.22402 48.3514 7.47624 48.5452 8.88498Z"
+                    fill="url(#paint1_linear_377_2600)" />
+                <path
+                    d="M75 8.88498H70.2722C70.1374 8.12706 69.8888 7.45564 69.5264 6.87072C69.164 6.27757 68.7131 5.77503 68.1738 5.36312C67.6344 4.9512 67.0192 4.64227 66.3282 4.43631C65.6455 4.22212 64.9081 4.11502 64.116 4.11502C62.7086 4.11502 61.4613 4.46103 60.3742 5.15304C59.287 5.83682 58.4359 6.84189 57.8207 8.16825C57.2055 9.48637 56.8979 11.097 56.8979 13C56.8979 14.936 57.2055 16.5672 57.8207 17.8935C58.4443 19.2117 59.2955 20.2085 60.3742 20.884C61.4613 21.5513 62.7044 21.885 64.1033 21.885C64.8786 21.885 65.6034 21.7861 66.2776 21.5884C66.9602 21.3824 67.5712 21.0817 68.1106 20.6863C68.6583 20.2909 69.1176 19.8048 69.4885 19.2281C69.8677 18.6515 70.1289 17.9924 70.2722 17.251L75 17.2757C74.823 18.4785 74.4396 19.6071 73.8496 20.6616C73.2682 21.7161 72.5055 22.647 71.5616 23.4544C70.6177 24.2535 69.5137 24.8796 68.2496 25.3327C66.9855 25.7776 65.5823 26 64.0401 26C61.7647 26 59.7337 25.4851 57.9471 24.4553C56.1605 23.4255 54.7531 21.9385 53.7249 19.9943C52.6968 18.0501 52.1827 15.7186 52.1827 13C52.1827 10.2731 52.701 7.9417 53.7376 6.0057C54.7741 4.06147 56.1857 2.57446 57.9724 1.54468C59.759 0.514892 61.7816 0 64.0401 0C65.4812 0 66.8212 0.197718 68.06 0.593155C69.2988 0.988594 70.4028 1.56939 71.372 2.33555C72.3411 3.09347 73.1375 4.0244 73.7612 5.12833C74.3932 6.22402 74.8062 7.47624 75 8.88498Z"
+                    fill="url(#paint2_linear_377_2600)" />
+                <defs>
+                    <linearGradient id="paint0_linear_377_2600" x1="0.188864" y1="13" x2="74.8301" y2="17.3225"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0016835" stop-color="#23245E" />
+                        <stop offset="0.3569" stop-color="#252A6B" />
+                        <stop offset="0.443" stop-color="#264482" />
+                        <stop offset="0.6254" stop-color="#2885BC" />
+                        <stop offset="0.7896" stop-color="#2AC5F4" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_377_2600" x1="0.188864" y1="13" x2="74.8301" y2="17.3225"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0016835" stop-color="#23245E" />
+                        <stop offset="0.3569" stop-color="#252A6B" />
+                        <stop offset="0.443" stop-color="#264482" />
+                        <stop offset="0.6254" stop-color="#2885BC" />
+                        <stop offset="0.7896" stop-color="#2AC5F4" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_377_2600" x1="0.188864" y1="13" x2="74.8301" y2="17.3225"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0016835" stop-color="#23245E" />
+                        <stop offset="0.3569" stop-color="#252A6B" />
+                        <stop offset="0.443" stop-color="#264482" />
+                        <stop offset="0.6254" stop-color="#2885BC" />
+                        <stop offset="0.7896" stop-color="#2AC5F4" />
+                    </linearGradient>
+                </defs>
+            </svg>
         </div>
-        <!--  -->
-
+        <div class="flex gap-10 justify-center items-center">
+            <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Trang chủ
+            </p>
+            <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Giới thiệu
+            </p>
+            <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Danh mục
+            </p>
+            <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Big Sale
+            </p>
+            <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">Sản phẩm
+                nổi bật</p>
+            <p class="hover:text-[#258AFF] text-[#696984] text-lg font-semibold leading-7 cursor-pointer">V-Store
+            </p>
+        </div>
     </div>
     <div class="bg-[#E8F7FF]">
         <div class="z-[2]">
@@ -278,7 +293,7 @@
         <p class="uppercase text-[#258AFF] text-[30px] font-bold text-center mt-[60px]">DANH MỤC
         </p>
         <div class="w-[37px] mx-auto border-b-[#258AFF] border-b-[3px]"></div>
-        <div class="slider py-[60px]">
+        <div class="slider py-[50px]">
             <div class="flex flex-col gap-4 items-center">
                 <div class="bg-[#fff] w-[100px] h-[100px] flex items-center justify-center rounded-full">
                     <img class="w-[50px] h-[50px]" src="./assets/img/img3.png" alt="">
@@ -358,6 +373,160 @@
                 <p class="text-lg text-[#2C2C37]">Thời trang nữ</p>
             </div>
         </div>
+        <!--  -->
+        <div class="mt-[68px] mb-[60px]">
+            <img class="w-full object-contain rounded-tl-2xl rounded-tr-2xl" src="./assets/img/bg2.png" alt="">
+            <div class="h-[434px] rounded-bl-2xl rounded-br-2xl pt-[60px] px-[30px]"
+                style="background: linear-gradient(180deg, #258AFF 0%, #99D7FF 100%);">
+                <!-- slider2 -->
+                <div class="slider2">
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[256px] flex flex-col">
+                        <img class="h-[146px] object-cover rounded-tl-lg rounded-tr-lg" src="./assets/img/img4.png"
+                            alt="">
+                        <div
+                            class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-[#fff] rounded-bl-lg rounded-br-lg">
+                            <p class="text-[#2C2C37] text-lg leading-[22px]">Giày Sneaker MLB NY đẹp đế nâu chuẩn bản
+                                Trun...</p>
+                            <div class="flex gap-1 items-center">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_full.png" alt="">
+                                <img src="./assets/img/star_half.png" alt="">
+                                <img src="./assets/img/star_white.png" alt="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#FF3750] text-lg font-semibold leading-[22px]">120.000đ</p>
+                                <p class="text-[#696984] text-sm leading-[38px] line-through">150.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <p class="uppercase text-[#258AFF] text-[30px] font-bold text-center mt-[60px]">SẢN PHẨM NỔI BẬT
+        </p>
+        <div class="w-[37px] mx-auto border-b-[#258AFF] border-b-[3px] mb-[60px]"> </div>
     </div>
     <!-- jq -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -374,7 +543,8 @@
             autoplay: true,
             slidesToScroll: 8,
             slidesToShow: 8,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 2000,
+            pauseOnFocus: true,
             dots: true,
             // the magic
             responsive: [{
@@ -398,6 +568,35 @@
                 breakpoint: 300,
                 settings: "unslick" // destroys slick
 
+            }]
+        });
+        $(".slider2").slick({
+            arrows: false,
+            focusOnSelect: true,
+            infinite: true,
+            autoplay: true,
+            slidesToScroll: 5,
+            pauseOnFocus: true,
+            slidesToShow: 5,
+            autoplaySpeed: 2000,
+            dots: true,
+            variableWidth: false,
+            // the magic
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true
+                }
+            }, {
+                breakpoint: 300,
+                settings: "unslick" // destroys slick
             }]
         });
     </script>
