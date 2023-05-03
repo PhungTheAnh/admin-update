@@ -17,6 +17,7 @@
 <style>
     * {
         font-family: 'Inter', sans-serif;
+        transition: all .1s ease;
     }
 
     .slick-dots li button:before {
@@ -91,11 +92,15 @@
         right: -1000px;
         transition: ease-in-out all 0.5s;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 
-<body class="bg-[#F1F8FF]" id="home">
+<body class="bg-[#F1F8FF] section" id="home">
     <div class="h-[68px]"></div>
-    <div class="fixed top-0 left-0 w-full bg-[#F1F8FF] z-[20] shadow-">
+    <div class="fixed top-0 left-0 w-full bg-[#F1F8FF] z-[20] shadow-md">
         <div
             class=" flex justify-between gap-2 items-center py-5 mx-auto xl:px-0 px-5 md:max-w-[710px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1440px]">
             <div>
@@ -396,7 +401,7 @@
             </div>
         </div>
         <!--  -->
-        <div class="mt-[130px] md:mt-[170px]">
+        <div class="mt-[130px] md:mt-[170px] section">
             <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center" id="gt">GIỚi THIỆU
             </p>
             <div class="w-[37px] mx-auto border-b-[#258AFF] border-b-[3px]"></div>
@@ -443,7 +448,7 @@
         </div>
     </div>
     <div class="mx-auto max-w-[90vw] md:max-w-[710px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1440px]">
-        <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center mt-[30px] md:mt-[60px]"
+        <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center mt-[30px] md:mt-[60px] section"
             id="dm">DANH
             MỤC
         </p>
@@ -542,7 +547,7 @@
             </div>
         </div>
         <!--  -->
-        <div class="mt-[68px] mb-[60px]" id="bs">
+        <div class="mt-[68px] mb-[60px] section" id="bs">
             <img class="w-full object-contain rounded-tl-2xl rounded-tr-2xl" src="./assets/img/bg2.png" alt="">
             <div class="md:min-h-[434px] rounded-bl-2xl rounded-br-2xl pt-[30px] md:pt-[60px] px-[10px] md:pb-[60px] pb-[20px]"
                 style="background: linear-gradient(180deg, #258AFF 0%, #99D7FF 100%);">
@@ -741,7 +746,7 @@
             </div>
         </div>
         <!--  -->
-        <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center mt-[30px] md:mt-[60px]"
+        <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center mt-[30px] md:mt-[60px] section"
             id="sp">SẢN
             PHẨM NỔI BẬT
         </p>
@@ -1140,7 +1145,7 @@
             </div>
         </div>
         <!--  -->
-        <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center mt-[30px] md:mt-[90px]"
+        <p class="uppercase text-[#258AFF] text-[20px] md:text-[30px] font-bold text-center mt-[30px] md:mt-[90px] section"
             id="vs">
             V-Store liên kết
         </p>
@@ -1321,6 +1326,13 @@
             $('.menu-show').addClass("menu-hidden")
             $('.menu-show').removeClass("show")
         })
+        // scroll
+        $('a[href*="#"]').on('click', function (e) {
+            $('html,body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 100
+            }, 100);
+            e.preventDefault();
+        });
     </script>
 </body>
 
