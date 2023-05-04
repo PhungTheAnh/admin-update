@@ -1436,9 +1436,8 @@
             })
             // scroll
             $('a[href*="#"]').on('click', function (e) {
-                console.log($(this).text());
-                $('a[href*="#"]').removeClass("menu-active")
-                $(this).addClass("menu-active")
+                $('a[href*="#"] p').removeClass("menu-active")
+                $(this).children().addClass("menu-active")
                 $('.menu-show').addClass("menu-hidden")
                 $('.menu-show').removeClass("show")
                 $('html,body').animate({
