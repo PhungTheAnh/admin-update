@@ -1436,7 +1436,8 @@
             })
             // scroll
             $('a[href*="#"]').on('click', function (e) {
-                // console.log($(this).text());
+                $('.menu-show').addClass("menu-hidden")
+                $('.menu-show').removeClass("show")
                 $('html,body').animate({
                     scrollTop: $($(this).attr('href')).offset().top - 100
                 }, 100);
