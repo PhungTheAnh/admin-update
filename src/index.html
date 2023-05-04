@@ -1436,7 +1436,7 @@
             })
             // scroll
             $('a[href*="#"]').on('click', function (e) {
-                log
+                console.log($(this).text());
                 $('a[href*="#"]').removeClass("menu-active")
                 $(this).addClass("menu-active")
                 $('.menu-show').addClass("menu-hidden")
