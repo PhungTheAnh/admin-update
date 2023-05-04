@@ -22,18 +22,46 @@
 
     .slick-dots li button:before {
         color: #258AFF;
+        font-size: 7px;
+        width: 18px;
+        height: 8px;
+    }
+
+    .slick-dots li button:before {
+        top: -5px;
+        left: 0;
+    }
+
+    .slick-dots li.slick-active button:before {
+        top: 0;
+        left: 0;
+    }
+
+    .slick-dots li {
+        width: 18px;
+        height: 8px;
+    }
+
+    .slick-dots li button {
+        width: 18px;
+        height: 8px;
+        padding: 0;
     }
 
     .slider .slick-dots li.slick-active button:before {
         color: #258AFF;
         opacity: 1;
-        /* content: "▂"; */
+        background-color: #258AFF;
+        content: "";
+        width: 18px;
+        height: 8px;
+        border-radius: 4px;
     }
 
     .slider2 .slick-dots li.slick-active button:before {
         color: #fff;
         opacity: 1;
-        /* content: "▂"; */
+        content: "";
     }
 
     .slider .slick-slide {
@@ -42,14 +70,9 @@
 
     .slider2 .slick-slide {
         display: flex;
-        /* flex-direction: column; */
-        /* gap: 16px */
-    }
-
-    .slider2 .slick-slide {
-        /* width: 256px !important; */
         margin: 0 10px;
     }
+
 
     /*  */
     .gg {
@@ -562,7 +585,7 @@
                     style="background: linear-gradient(180deg, #258AFF 0%, #99D7FF 100%);">
                     <!-- slider2 -->
                     <div class="slider2">
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -571,7 +594,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Giày Sneaker
                                     MLB NY
                                     đẹp đế nâu
                                     chuẩn
@@ -592,7 +616,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -601,7 +625,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Giày Sneaker
                                     MLB NY
                                     đẹp đế nâu
                                     chuẩn
@@ -622,7 +647,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -631,7 +656,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Giày Sneaker
                                     MLB NY
                                     đẹp đế nâu
                                     chuẩn
@@ -652,7 +678,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -661,7 +687,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Vans old skool
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Vans old skool
                                     classic CHÍNH HÃNG</p>
                                 <div class="flex gap-1 items-center">
                                     <img src="./assets/img/star_full.png" alt="">
@@ -678,7 +705,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -687,7 +714,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày tiểu thư
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Giày tiểu thư
                                     vintage hottrend 2023</p>
                                 <div class="flex gap-1 items-center">
                                     <img src="./assets/img/star_full.png" alt="">
@@ -704,7 +732,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -713,7 +741,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Set váy hoa nhí
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Set váy hoa nhí
                                     tiểu thư vintage hottrend 2023 g...</p>
                                 <div class="flex gap-1 items-center">
                                     <img src="./assets/img/star_full.png" alt="">
@@ -730,7 +759,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[256px] flex flex-col relative cursor-pointer">
+                        <div class="w-[256px] min-h-[286px] flex flex-col relative cursor-pointer">
                             <div class="text-center gg w-[51px] h-[52px] absolute left-[15px] top-0">
                                 <p class="text-white text-sm md:text-[17px] font-bold">5%</p>
                                 <p class="text-[9px] md:text-xs text-[#FFFA00] font-medium">GIẢM</p>
@@ -739,7 +768,8 @@
                                 src="./assets/img/img4.png" alt="">
                             <div
                                 class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Váy hoa nhí
+                                <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">
+                                    Váy hoa nhí
                                     tiểu
                                     thư</p>
                                 <div class="flex gap-1 items-center">
@@ -777,7 +807,8 @@
                         src="./assets/img/h1.jpg" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -805,7 +836,8 @@
                         src="./assets/img/h2.jpg" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -833,7 +865,8 @@
                         src="./assets/img/h3.jpg" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -861,7 +894,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -889,7 +923,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -917,7 +952,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -945,7 +981,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -973,7 +1010,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -1001,7 +1039,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -1029,7 +1068,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -1057,7 +1097,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -1085,7 +1126,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -1113,7 +1155,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
@@ -1141,7 +1184,8 @@
                         src="./assets/img/img4.png" alt="">
                     <div
                         class="pt-2 pb-4 px-4 flex flex-col gap-2.5 justify-center bg-white rounded-bl-lg rounded-br-lg">
-                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2">Giày Sneaker MLB NY đẹp
+                        <p class="text-[#2C2C37] text-sm md:text-lg leading-[22px] line-clamp-2 min-h-[56px]">Giày
+                            Sneaker MLB NY đẹp
                             đế
                             nâu chuẩn
                             bản
